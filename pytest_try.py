@@ -13,6 +13,9 @@ import pytest
 
 
 def func(x: float, max_num: int) -> float:
+  '''
+  This function adds 5 to the first input (float) if it does not exceed the second input (float )
+  '''
   if x <= max_num:
     return x + 5
   else:
@@ -21,14 +24,20 @@ def func(x: float, max_num: int) -> float:
 
 
 class fruit:
+  '''
+  Easy class with just one attribute 
+  '''
   def __init__(self, name):
     self.name = name
 
   
 ## another  class
 
-class fruit_2(): # inherits from fruit 
-
+class fruit_2(fruit): # inherits from fruit 
+  '''
+  Another classed based on the fruit class (inherits from it). 
+  It has more input arguments (sie and weight - both float) and one function based on the latter
+  '''
   def __init__(self, name: str,  size: float, weight: float):
 
     super().__init__()
