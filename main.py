@@ -77,7 +77,7 @@ def return_similarity(texts: dict):
 
 
     Hence, you can call the URL to this API with the add-on '/predict' (instead of '/docs') and feed in a JSON/Python Dictionary of the form laid out above. 
-    For example, one could call (in Python - using the request library):
+    Even though this might take some time, one could, for example, call (in Python - using the request library):
 
     ######
 
@@ -122,8 +122,8 @@ def return_similarity(texts: dict):
 
 #  Run the API with uvicorn
 #    Will run on http://127.0.0.1:8000
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
+#if __name__ == '__main__':
+#    uvicorn.run(app, host='127.0.0.1', port=8000)
 
 ##@app.get("/items/{item_id}")
 ##def read_item(item_id: int, q: str, = None):
