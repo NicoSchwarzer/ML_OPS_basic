@@ -114,7 +114,7 @@ def return_similarity(texts: dict):
 
 
     return {
-        'The contextual similarity based on a cosine similarity (scale -1 to 1) is ': sim
+        'The contextual similarity based on a cosine similarity is ': sim
     }
 
 
