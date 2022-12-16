@@ -67,10 +67,11 @@ def return_similarity(texts: dict):
 
     ''' 
 
-    This Fast API App was developed by Nico Schwarzer GH LINK. It computes the contextual similarity of two texts (which, if nned be,
+    This Fast API App was developed by Nico Schwarzer (https://github.com/NicoSchwarzer/ML_OPS_basic/tree/better_nlp_api).
+    It computes the contextual similarity of two texts (which, if need be,
     it translates into English) based on a SOTA Transformer-based Deep Learning method ("https://huggingface.co/sentence-transformers/all-mpnet-base-v2").
     Also, it is hosted on an AWS-EMEA EC-2 instance. 
-
+    
     The API uses a single input parameter in its POST method:
     Text: Dictionary containing two strings between which the contextual similarity is to be inferred - in the form of:
     {"text_1": "This is text_1", "text_2": "This is text_2"}.
@@ -91,7 +92,7 @@ def return_similarity(texts: dict):
     texts = {'text_1': "i am well", 
     'text_2': "Ich fühle mich gut"}
 
-    response = requests.post('insert URL here /predict', json=texts)
+    response = requests.post(''http://54.237.194.145/predict', json=texts)
     
     print(response.content)
 
