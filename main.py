@@ -92,7 +92,7 @@ def return_similarity(texts: dict):
     texts = {'text_1': "i am well", 
     'text_2': "Ich fühle mich gut"}
 
-    response = requests.post(''http://54.237.194.145/predict', json=texts)
+    response = requests.post('INSERT_URL/predict', json=texts)
     
     print(response.content)
 
